@@ -2,11 +2,11 @@
     <figure>
         <img class="rounded-t-lg" :src="image" alt="">
         <figcaption class="flex flex-col relative px-5 py-7 border-2 border-t-0 rounded-b-lg">
-            <h3 class="text-2xl text-gray-900">{{titre}}</h3>
+            <h3 class="text-2xl text-gray-900 font-bold">{{titre}}</h3>
             <address class="not-italic text-gray-500">{{ lieu }}</address>
             <div class="order-first flex items-center">
-                <div class="text-2xl text-indigo-500">${{ price.toLocaleString("en-US") }}</div>
-                <div class="text-gray-500 ">/months</div>
+                <div class="text-2xl text-indigo-500 font-bold">${{ price.toLocaleString("en-US") }}</div>
+                <div class="text-gray-500 ">/month</div>
             </div>
             <hr class="border-indigo-100 border-t-2 my-2"/>
             <div class="flex justify-between text-sm">
