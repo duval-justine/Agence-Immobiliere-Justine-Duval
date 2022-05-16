@@ -1,17 +1,15 @@
 <script>
 import card from "../components/Card.vue"
-import header1 from "../components/Header.vue"
 import footer1 from "../components/Footer.vue"
 export default {
     name:"App",
-    components: { card, header1, footer1 },
+    components: { card, footer1 },
 }
 </script>
 
 <template class="bg-indigo-25">
-    <header1 />
     <div>
-        <p class="text-4xl font-bold text-indigo-1000 text-center mt-[3.625rem] mb-8">Search properties to rent</p>
+        <h2 class="text-4xl font-bold text-indigo-1000 text-center mt-[3.625rem] mb-8">Search properties to rent</h2>
     </div>
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(343px,1fr))]">
         <card class="p-4" 
