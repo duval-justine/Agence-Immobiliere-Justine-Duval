@@ -2,16 +2,20 @@
 import card from "../components/Card.vue"
 import footer1 from "../components/Footer.vue"
 import searchliste from "../components/SearchListe.vue"
+import searchlocation from "../components/SearchLocation.vue"
 export default {
     name:"App",
-    components: { card, footer1, searchliste },
+    components: { card, footer1, searchliste, searchlocation },
 }
 </script>
 
 <template >
     <main class="bg-indigo-25 pt-14 px-4 font-inter">
-        <h2 class="text-4xl font-bold text-indigo-1000 text-center pt-[3.625rem] mb-8">Search properties to rent</h2>
-        <searchliste />
+        <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
+            <h2 class="text-4xl font-bold text-indigo-1000 text-center pt-[3.625rem] mb-8">Search properties to rent</h2>
+            <searchliste />
+        </div>
+        <searchlocation />
         <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(343px,1fr))]">
             <card class="p-4" 
             titre="Beverly Springfield"
@@ -53,6 +57,5 @@ export default {
         </div>
     </main>
     <footer1 />
-
 </template>
 
